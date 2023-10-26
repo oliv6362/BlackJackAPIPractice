@@ -2,9 +2,9 @@
 Dette projekt er udviklet med html, css og javascript, samt anvender en json API
 
 Knapperne bruges således:
--New game: Hvis du gerne vil spille igen efter at have vundet, tabt osv
--Hit: Her tager du og derefter botten et kort fra bunken af kort
--Stay: Her vælger du, at du ikke vil have flere kort og er færdig
+- New game: Hvis du gerne vil spille igen efter at have vundet, tabt osv
+- Hit: Her tager du og derefter botten et kort fra bunken af kort
+- Stay: Her vælger du, at du ikke vil have flere kort og er færdig
 
 Relger for blackjack:
 - Det gælder at få mere end modstanderen, men ikke højere end 21
