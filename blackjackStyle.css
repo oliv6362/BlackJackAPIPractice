@@ -1,0 +1,95 @@
+/* Generelle definitioner */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, Arial, sans-serif, Helvetica;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto auto auto auto; /* This lets the botHand and playerHand areas flex according to content */
+
+    grid-template-areas:
+                'header header header'
+                'botHand botHand botHand'
+                'cardDeck cardDeck cardDeck'
+                'playerHand playerHand playerHand'
+                'options options options';
+}
+
+.header {
+    grid-area: header;
+}
+
+.botHand {
+    grid-area: botHand;
+}
+
+.cardDeck {
+    grid-area: cardDeck;
+}
+
+.playerHand {
+    grid-area: playerHand;
+}
+
+.options {
+    grid-area: options;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .grid-container  {
+        grid-template-areas:
+        'header header header'
+        'botHand botHand botHand'
+        'cardDeck cardDeck cardDeck'
+        'playerHand playerHand playerHand'
+        'options options options';
+    }
+}
+
+body {
+    text-align: center;
+    background: rgb(10, 124, 0);
+    color: white;   
+  }
+
+  .button {
+    background-color: rgb(92, 92, 92);
+    color: white;
+  
+    text-align: center;
+    width: 150px;
+    height: 75px;
+  
+    font-size: 32px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    margin-bottom: 3px
+  }
+  
+  .button:hover {
+    background-color: #2e2e2e;
+    color: white;
+  }
+  
+  .button:active{
+    background-color: #000000;
+  
+  }
+

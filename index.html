@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= stylesheet href="blackjackStyle.css">
+    
+    <title>BlackJack</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class = "header"></header>
+
+        <div class = "botHand"></div>
+
+        <div class = "cardDeck"></div>
+
+        <div class = "playerHand"></div>
+
+        <div class = "options">
+            <button type="button" id="resetButton" onclick="resetGame()" class = "button">New game</button>
+            <button type="button" id="drawButton" onclick="drawCard()" class = "button">Hit</button>
+            <button type="button" id="stayButton" onclick="stay()" class = "button">Stay</button>
+        </div>
+
+    </div>
+
+    <script src="blackjackScript.js"></script>
+</body>
+
+
+</html>
